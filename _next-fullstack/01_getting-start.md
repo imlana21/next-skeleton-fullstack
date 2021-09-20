@@ -137,6 +137,12 @@ module.exports = {
       password: process.env.DB_PASS,
       database: process.env.DB_NAME,
     },
+    migrations: {
+      directory: './database/migrations'
+    },
+    seeds: {
+      directory: './database/seeds'
+    }
   },
 
   staging: {
@@ -147,6 +153,10 @@ module.exports = {
     ...
   },
 ```
+
+## Buat folder database pada root project
+
+Gunanya untuk menyimpan segala hal yang berhubungan dengan database, misalnya migration, seed dan db config
 
 ## Jalankan migrate untuk membuat table
 

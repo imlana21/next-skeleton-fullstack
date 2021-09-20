@@ -7,9 +7,10 @@ export default function handler(req, res) {
   const createData = await db('post').insert({
     title,
     content
-  })
+  });
 
   res.json({
-    message: 'POST Success'
-  })
+    message: 'POST Success',
+    data: createData
+  });
 }
