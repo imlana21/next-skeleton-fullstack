@@ -1,5 +1,0 @@
-![](./src/Screenshot_20210721_093858.png)
-![](./src/Screenshot_20210721_094706.png)
-![](./src/Screenshot_20210721_094948.png)
-![](./src/Screenshot_20210721_095318.png)
-![](./src/Screenshot_20210721_095742.png)

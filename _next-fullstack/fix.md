@@ -1,1 +1,0 @@
-[Fix jsconfig.json](https://stackoverflow.com/questions/49056000/all-of-my-json-files-have-problems-loading-reference-schema-from-schemastore-az)

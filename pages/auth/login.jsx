@@ -1,6 +1,7 @@
 import Cookies from "js-cookie";
 import { ifLoginAuthorized, ifLoginUnauthorized } from "middlewares/auth/login-verify";
 import { useState } from "react";
+import Router from 'next/router'
 
 
 export default function Login () {
@@ -34,6 +35,8 @@ const [status, setStatus] = useState('normal');
     Cookies.set('token', loginJson.token)
 
     setStatus('success');
+
+    Router.push('/admin');
   }
 
   const fieldsHandler = (event) => {

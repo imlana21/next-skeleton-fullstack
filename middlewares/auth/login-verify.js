@@ -13,19 +13,21 @@ export function ifLoginAuthorized(context) {
         Location: '/auth/login'
       }).end();
     
-    return resolve('Authorized');
+    return resolve({
+      token: allCookies.token,
+      status: 'Authorized'
+    });
   })
 }
 
 // If token on Cookies
 export function ifLoginUnauthorized(context) {
-  console.log(context)
   return new Promise(resolve => {
     const allCookies = cookies(context);
     
     if(allCookies.token) 
       return context.res.writeHead(302, {
-        Location: '/admin/posts'
+        Location: '/admin'
       }).end();
     
     return resolve('Unauthorized');
