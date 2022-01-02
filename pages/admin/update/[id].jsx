@@ -10,7 +10,7 @@ export default function Create(props) {
     content
   });
   const [status, setStatus] = useState('normal');
-
+  
   const inputHandler = (event) => {
     const inputName = event.target.getAttribute('name');
 
